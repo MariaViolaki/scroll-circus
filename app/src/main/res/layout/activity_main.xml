@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,123 +15,153 @@
         android:layout_marginStart="16dp"
         android:background="#D9FFFFFF"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:paddingTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/stripes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ringmaster" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="6"
+                            android:background="#B71C1C"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:includeFontPadding="false"
+                            android:padding="8dp"
+                            android:text="Welcome to\nScroll Circus!\nTo begin please select 3 personality traits!"
+                            android:textColor="#FFFFFF"
+                            app:autoSizeMaxTextSize="56sp"
+                            app:autoSizeMinTextSize="5sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#FFFFFF"
-            android:orientation="horizontal"
-            android:padding="8dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <ImageView
-                android:layout_width="0dp"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:adjustViewBounds="true"
-                android:src="@drawable/ringmaster" />
+                android:layout_marginBottom="8dp"
+                android:text="50 personality points left"
+                android:textSize="16sp" />
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView
+                    <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_weight="6"
-                        android:autoSizeTextType="uniform"
-                        android:background="#B71C1C"
-                        android:gravity="center_vertical|center_horizontal"
-                        android:includeFontPadding="false"
-                        android:padding="8dp"
-                        android:text="Welcome to \nScroll Circus!\n To begin please select 3 personality traits!"
-                        android:textColor="#FFFFFF" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:paddingLeft="8dp"
+                        android:text="Checkbox" />
 
-                    <TextView
+                    <CheckBox
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:paddingLeft="8dp"
+                        android:text="Checkbox" />
 
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:paddingLeft="8dp"
+                        android:text="Checkbox" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:paddingLeft="8dp"
+                        android:text="Checkbox" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:paddingLeft="8dp"
+                        android:text="Checkbox" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:paddingLeft="8dp"
+                        android:text="Checkbox" />
                 </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:paddingLeft="8dp"
-                    android:text="Checkbox" />
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:paddingLeft="8dp"
-                    android:text="Checkbox" />
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="4dp"
-                    android:paddingLeft="8dp"
-                    android:text="Checkbox" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:paddingLeft="8dp"
-                    android:text="Checkbox" />
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:paddingLeft="8dp"
-                    android:text="Checkbox" />
-
-                <CheckBox
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
-                    android:paddingLeft="8dp"
-                    android:text="Checkbox" />
-            </LinearLayout>
-
-        </LinearLayout>
 
     </LinearLayout>
 
