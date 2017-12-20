@@ -20,7 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:orientation="horizontal">
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:padding="8dp">
 
             <ImageView
                 android:layout_width="0dp"
@@ -47,8 +49,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_weight="6"
                         android:autoSizeTextType="uniform"
-                        android:background="#B71C1C
-"
+                        android:background="#B71C1C"
                         android:gravity="center_vertical|center_horizontal"
                         android:includeFontPadding="false"
                         android:padding="8dp"
