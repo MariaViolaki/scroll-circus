@@ -62,7 +62,7 @@
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
                             android:padding="8dp"
-                            android:text="Welcome to\nScroll Circus!\nTo begin please select 3 personality traits!"
+                            android:text="Welcome to\nScroll Circus!\nTo begin please select your resources!"
                             android:textColor="#FFFFFF"
                             app:autoSizeMaxTextSize="56sp"
                             app:autoSizeMinTextSize="5sp"
@@ -86,14 +86,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="50 personality points left"
-                android:textSize="16sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Points left:  "
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/number_of_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="50"
+                    android:textColor="#B71C1C"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -106,62 +127,187 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <CheckBox
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:paddingLeft="8dp"
-                        android:text="Checkbox" />
+                        android:orientation="horizontal">
 
-                    <CheckBox
+                        <Switch
+                            android:id="@+id/switch_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Caution, observation and balance (Cost: 15)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:paddingLeft="8dp"
-                        android:text="Checkbox" />
+                        android:orientation="horizontal">
 
-                    <CheckBox
+                        <Switch
+                            android:id="@+id/switch_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Flexibility and grace (Cost: 10)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:paddingLeft="8dp"
-                        android:text="Checkbox" />
+                        android:orientation="horizontal">
 
+                        <Switch
+                            android:id="@+id/switch_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
 
-                </LinearLayout>
+                        <TextView
+                            android:id="@+id/resource_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="People skills and entertainment (Cost: 20)" />
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    </LinearLayout>
 
-                    <CheckBox
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="4dp"
-                        android:paddingLeft="8dp"
-                        android:text="Checkbox" />
+                        android:orientation="horizontal">
 
-                    <CheckBox
+                        <Switch
+                            android:id="@+id/switch_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Animals and animal training (Cost: 5)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="4dp"
-                        android:paddingLeft="8dp"
-                        android:text="Checkbox" />
+                        android:orientation="horizontal">
 
-                    <CheckBox
+                        <Switch
+                            android:id="@+id/switch_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Budget and entrepreneurship (Cost: 25)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="4dp"
-                        android:paddingLeft="8dp"
-                        android:text="Checkbox" />
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_six"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Snacks and beverages (Cost: 10)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_seven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_seven"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Knowledge of tricks and illusions (Cost: 20)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/switch_eight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="4dp" />
+
+                        <TextView
+                            android:id="@+id/resource_eight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:text="Fitness and strength (Cost: 15)" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
 
         </LinearLayout>
-
 
     </LinearLayout>
 
