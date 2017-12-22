@@ -109,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="50"
+                    android:text=""
                     android:textColor="#B71C1C"
                     android:textSize="40sp"
                     android:textStyle="bold" />
@@ -137,6 +137,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceOne"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -159,6 +160,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceTwo"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -181,6 +183,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceThree"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -203,6 +206,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceFour"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -225,6 +229,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceFive"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -247,6 +252,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceSix"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -269,6 +275,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceSeven"
                             android:paddingLeft="4dp" />
 
                         <TextView
@@ -291,6 +298,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
+                            android:onClick="resourceEight"
                             android:paddingLeft="4dp" />
 
                         <TextView
