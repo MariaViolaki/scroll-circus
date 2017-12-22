@@ -3,10 +3,14 @@ package com.example.android.scrollcircus;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,14 +18,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        int points = 50;
-        TextView numberOfPoints = findViewById(R.id.number_of_points);
-        numberOfPoints.setText("" + points);
-
     }
 
-    int points = 50;
+    int points;
+    int buttonClicked = 0;
+
+    public void randomizePoints(View view) {
+        if (buttonClicked == 0) {
+            buttonClicked ++;
+            // Generate random number using multiples of 5
+            points = ((int)(Math.random() * 15 + 2) * 5);
+            // Show the number on the screen
+            TextView numberOfPoints = findViewById(R.id.number_of_points);
+            numberOfPoints.setText("" + points);
+        }
+        else {
+            buttonClicked ++;
+            Toast.makeText(this, "You can't change your fate.", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public void resourceOne(View view) {
         // Find Switch on XML

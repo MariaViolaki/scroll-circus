@@ -14,8 +14,17 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:background="#D9FFFFFF"
-        android:orientation="vertical"
-        android:paddingTop="16dp">
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Scroll Circus!"
+            android:padding="16dp"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:textSize="18dp"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -62,7 +71,84 @@
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
                             android:padding="8dp"
-                            android:text="Welcome to\nScroll Circus!\nTo begin please select your resources!"
+                            android:text="First, let's find out how lucky you are! Please press the life button!"
+                            android:textColor="#FFFFFF"
+                            app:autoSizeMaxTextSize="56sp"
+                            app:autoSizeMinTextSize="5sp"
+                            app:autoSizeStepGranularity="1sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/life_button"
+            android:layout_width="match_parent"
+            android:onClick="randomizePoints"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:textColor="#FFFFFF"
+            android:text="Life Button"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/stripes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ringmaster" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="6"
+                            android:background="#B71C1C"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:includeFontPadding="false"
+                            android:padding="8dp"
+                            android:text="Now try to allocate your resources properly to create a circus!"
                             android:textColor="#FFFFFF"
                             app:autoSizeMaxTextSize="56sp"
                             app:autoSizeMinTextSize="5sp"
@@ -109,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text=""
+                    android:text="0"
                     android:textColor="#B71C1C"
                     android:textSize="40sp"
                     android:textStyle="bold" />
