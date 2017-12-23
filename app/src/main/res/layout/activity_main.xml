@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="16dp"
-            android:text="Welcome to Scroll Circus!"
+            android:text="@string/welcome"
             android:textSize="18dp"
             android:textStyle="bold|italic" />
 
@@ -70,7 +70,7 @@
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
                             android:padding="8dp"
-                            android:text="First, let's find out how lucky you are! Please press the life button!"
+                            android:text="@string/step_one"
                             android:textColor="#FFFFFF"
                             app:autoSizeMaxTextSize="56sp"
                             app:autoSizeMinTextSize="5sp"
@@ -99,7 +99,7 @@
             android:layout_marginStart="24dp"
             android:background="#000000"
             android:onClick="randomizePoints"
-            android:text="Life Button"
+            android:text="@string/life_button"
             android:textColor="#FFFFFF" />
 
         <RelativeLayout
@@ -147,7 +147,7 @@
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
                             android:padding="8dp"
-                            android:text="Now try to allocate your resources properly to create a circus!"
+                            android:text="@string/step_two"
                             android:textColor="#FFFFFF"
                             app:autoSizeMaxTextSize="56sp"
                             app:autoSizeMinTextSize="5sp"
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="Points left:  "
+                    android:text="@string/points_left"
                     android:textAllCaps="true"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -205,7 +205,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Foundation"
+                android:text="@string/foundation"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -226,7 +226,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add budget for tent, seating, lighting etc. (Cost: 25)" />
+                    android:text="@string/budget" />
 
             </LinearLayout>
 
@@ -248,7 +248,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add professional knowledge of acts and tricks (Cost: 20)" />
+                    android:text="@string/knowledge" />
 
             </LinearLayout>
 
@@ -257,7 +257,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="16dp"
-                android:text="Employees"
+                android:text="@string/employees"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -278,7 +278,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add ringmaster, clowns, mimes etc. (Cost: 20)" />
+                    android:text="@string/entertainment" />
 
             </LinearLayout>
 
@@ -300,7 +300,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add acrobats, jugglers, stilt-walkers etc. (Cost: 15)" />
+                    android:text="@string/caution" />
 
             </LinearLayout>
 
@@ -323,7 +323,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add strongmen, trapeze artists etc. (Cost: 15)" />
+                    android:text="@string/strength" />
 
             </LinearLayout>
 
@@ -345,7 +345,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add contortionists, escape artists etc. (Cost: 10)" />
+                    android:text="@string/flexibility" />
 
             </LinearLayout>
 
@@ -354,7 +354,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="16dp"
-                android:text="Extras"
+                android:text="@string/extras"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -375,7 +375,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add custard pies, snacks and beverages (Cost: 10)" />
+                    android:text="@string/snacks" />
 
             </LinearLayout>
 
@@ -397,7 +397,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add a gift shop (Cost: 10)" />
+                    android:text="@string/merchandising" />
 
             </LinearLayout>
 
@@ -419,7 +419,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add animals and animal trainers (Cost: 5)" />
+                    android:text="@string/animals" />
 
             </LinearLayout>
 
@@ -441,7 +441,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="8dp"
-                    android:text="Add a freak show (Cost: 5)" />
+                    android:text="@string/freaks" />
 
             </LinearLayout>
 

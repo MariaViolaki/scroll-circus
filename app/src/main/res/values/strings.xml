@@ -1,3 +1,23 @@
 <resources>
+
     <string name="app_name">Scroll Circus</string>
+    <string name="welcome">Welcome to Scroll Circus!</string>
+    <string name="step_one">First, let\'s find out how lucky you are! Please press the life button!</string>
+    <string name="life_button">Life Button</string>
+    <string name="step_two">Now try to allocate your resources properly to create a circus!</string>
+    <string name="points_left">Points left:&#160;&#160;&#160;</string>
+    <string name="foundation">Foundation</string>
+    <string name="budget">Add budget for tent, seating, lighting etc. (Cost: 25)</string>
+    <string name="knowledge">Add professional knowledge of acts and tricks (Cost: 20)</string>
+    <string name="employees">Employees</string>
+    <string name="entertainment">Add ringmaster, clowns, mimes etc. (Cost: 20)</string>
+    <string name="caution">Add acrobats, jugglers, stilt-walkers etc. (Cost: 15)</string>
+    <string name="strength">Add strongmen, trapeze artists etc. (Cost: 15)</string>
+    <string name="flexibility">Add contortionists, escape artists etc. (Cost: 10)</string>
+    <string name="extras">Extras</string>
+    <string name="snacks">Add custard pies, snacks and beverages (Cost: 10)</string>
+    <string name="merchandising">Add a gift shop (Cost: 10)</string>
+    <string name="animals">Add animals and animal trainers (Cost: 5)</string>
+    <string name="freaks">Add a freak show (Cost: 5)</string>
+
 </resources>
