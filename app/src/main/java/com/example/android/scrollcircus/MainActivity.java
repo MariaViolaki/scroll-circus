@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LinearLayout newspaper = findViewById(R.id.newspaper);
+        newspaper.setVisibility(View.GONE);
     }
 
     int points;
@@ -198,5 +201,10 @@ public class MainActivity extends AppCompatActivity {
         }
         TextView numberOfPoints = findViewById(R.id.number_of_points);
         numberOfPoints.setText("" + points);
+    }
+
+    public void displayNewspaper(View view) {
+        LinearLayout newspaper = findViewById(R.id.newspaper);
+        newspaper.setVisibility(View.VISIBLE);
     }
 }

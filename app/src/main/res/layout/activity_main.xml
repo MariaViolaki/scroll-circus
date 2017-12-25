@@ -445,7 +445,20 @@
 
             </LinearLayout>
 
+            <Button
+                android:id="@+id/display_newspaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="#000000"
+                android:onClick="displayNewspaper"
+                android:text="@string/create_circus"
+                android:textColor="#FFFFFF" />
+
             <LinearLayout
+                android:id="@+id/newspaper"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -470,6 +483,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/article"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#F6F6F4"

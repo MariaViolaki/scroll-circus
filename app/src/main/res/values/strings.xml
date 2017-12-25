@@ -19,6 +19,7 @@
     <string name="merchandising">Add a gift shop (Cost: 10)</string>
     <string name="animals">Add animals and animal trainers (Cost: 5)</string>
     <string name="freaks">Add a freak show (Cost: 5)</string>
+    <string name="create_circus">Create Circus</string>
     <string name="article_title">New Circus Comes to Town</string>
     <string name="prologue_good">The recent circus event impressed even the most sceptical spectators!</string>
     <string name="prologue_bad">Unfortunately, the recent circus event was far from extraordinary.</string>
