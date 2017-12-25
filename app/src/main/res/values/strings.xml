@@ -20,4 +20,31 @@
     <string name="animals">Add animals and animal trainers (Cost: 5)</string>
     <string name="freaks">Add a freak show (Cost: 5)</string>
     <string name="article_title">New Circus Comes to Town</string>
+    <string name="prologue_good">The recent circus event impressed even the most sceptical spectators!</string>
+    <string name="prologue_bad">Unfortunately, the recent circus event was far from extraordinary.</string>
+    <string name="no_budget">It was an amateur initiative due to the lack of facilities.</string>
+    <string name="yes_budget">Everyone could enjoy themselves thanks to the comfortable and beautiful facilities.</string>
+    <string name="no_knowledge">The acts were poorly performed and some spectators asked for a refund.</string>
+    <string name="yes_knowledge">The entire event and the acts kept everyone on the edge of their seats.</string>
+    <string name="no_entertainment">The acts were inadequately coordinated and, quite unexpectedly, there were no clowns.</string>
+    <string name="yes_entertainment">The ringmaster as well as the clowns and mimes kept the audience entertained through the entire event.</string>
+    <string name="no_caution">Despite, the audience\'s expectations, there were no caution and balance-related performances.</string>
+    <string name="yes_caution">The acrobats, jugglers and stilt-walkers added a brilliant variety to the entire show.</string>
+    <string name="no_strength">There were no strongmen or trapeze artists, performers any professional should include in the show.</string>
+    <string name="yes_strength">The strongmen and trapeze artists impressed the audience with their stamina.</string>
+    <string name="no_flexibility">The initiative was at a disadvantage compared to its competitors due to the lack of contortionists and escape artists.</string>
+    <string name="yes_flexibility">The initiative included multiple flexibility and escape acts rendering the event worthwhile.</string>
+    <string name="no_snacks">Unfortunately, there were no snacks and beverages offered in the beginning and in-between the acts.</string>
+    <string name="yes_snacks">The audience appreciated the availability of snacks and beverages in the beginning and in-between the acts.</string>
+    <string name="no_merchandising">The event coordinator did not include a gift shop to increase earnings after the show.</string>
+    <string name="yes_merchandising">People had the option to purchase gifts after the show, something that helped spread the circus\'s reputation.</string>
+    <string name="no_animals">No complaints were phrased about the lack animals and animal trainers in the performance.</string>
+    <string name="yes_animals_good">The circus was held by professionals and everyone admired the variety the animal-related acts added to the entire event.</string>
+    <string name="yes_animals_bad">Many spectators considered the event an opportunity for amateurs to abuse animals.</string>
+    <string name="no_freaks">There was certainly no freak show included in the event, and no spectator appeared unsatisfied about this.</string>
+    <string name="yes_freaks_good">As for the freak show, it was also perceived positively, probably due to the circus\'s admirable reputation.</string>
+    <string name="yes_freaks_bad">As for the freak show, it undermined the entire show as it was considered largely anachronistic.</string>
+    <string name="epilogue_good">Overall, it is broadly agreed that there has never been a circus so brilliant until now.</string>
+    <string name="epilogue_bad">Overall, it is broadly agreed there is still room for improvement for the new circus.</string>
+
 </resources>
