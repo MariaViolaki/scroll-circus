@@ -270,10 +270,7 @@ public class MainActivity extends AppCompatActivity {
         numberOfPoints.setText("" + points);
     }
 
-    public void displayNewspaper(View view) {
-
-        LinearLayout newspaper = findViewById(R.id.newspaper);
-        newspaper.setVisibility(View.VISIBLE);
+    private String composeArticle() {
 
         // Determine success depending on resources availability
         if (hasBudget && hasKnowledge && hasEntertainment && hasCaution && hasStrength && hasFlexibility && hasSnacks && hasMerchandising) {
@@ -379,6 +376,7 @@ public class MainActivity extends AppCompatActivity {
             badFreaksSentence = "";
         }
 
+        // Create the article body
         String article = goodPrologue + badPrologue + "\n\n" + getString(R.string.introduction_good);
         article += goodBudgetSentence + goodKnowledgeSentence + goodEntertainmentSentence;
         article += goodCautionSentence + goodStrengthSentence + goodFlexibilitySentence;
@@ -394,7 +392,17 @@ public class MainActivity extends AppCompatActivity {
             article += "\n\n" + badEpilogue;
         }
 
+        return article;
+    }
+
+    public void displayNewspaper(View view) {
+
+        // Make the results visible
+        LinearLayout newspaper = findViewById(R.id.newspaper);
+        newspaper.setVisibility(View.VISIBLE);
+
+        // Display the article body
         TextView articleTextView = findViewById(R.id.article);
-        articleTextView.setText(article);
+        articleTextView.setText(composeArticle());
     }
 }
