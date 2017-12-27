@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         if (buttonClicked == 0) {
             buttonClicked++;
             // Generate random number using multiples of 5
-            points = ((int) (Math.random() * 15 + 2) * 5);
+            points = ((int) (Math.random() * 15 + 10) * 5);
             // Show the number on the screen
             TextView numberOfPoints = findViewById(R.id.number_of_points);
             numberOfPoints.setText("" + points);
@@ -514,6 +514,14 @@ public class MainActivity extends AppCompatActivity {
 
     private int calculateIncome() {
 
+        // Determine success depending on resources availability
+        if (hasBudget && hasKnowledge && hasEntertainment && hasCaution && hasStrength && hasFlexibility && hasSnacks && hasMerchandising) {
+            isSuccessful = true;
+        } else {
+            isSuccessful = false;
+        }
+
+        // Calculate earnings from first circus event
         int newPoints = 0;
 
         if (hasBudget) {
@@ -540,6 +548,17 @@ public class MainActivity extends AppCompatActivity {
         if (hasMerchandising) {
             newPoints += 5;
         }
+        if (isSuccessful && hasAnimals) {
+            newPoints += 0;
+        } else if (hasAnimals) {
+            newPoints -= 5;
+        }
+        if (isSuccessful && hasFreaks) {
+            newPoints += 0;
+        } else if (hasFreaks) {
+            newPoints -= 5;
+        }
+
         return newPoints;
     }
 

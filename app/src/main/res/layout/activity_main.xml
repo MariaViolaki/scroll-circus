@@ -97,7 +97,7 @@
             android:layout_marginBottom="32dp"
             android:layout_marginEnd="24dp"
             android:layout_marginStart="24dp"
-            android:background="#000000"
+            android:background="@drawable/black_buttonshape"
             android:onClick="randomizePoints"
             android:text="@string/life_button"
             android:textColor="#FFFFFF" />
@@ -184,7 +184,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/points_left"
+                    android:text="@string/life_points_left"
                     android:textAllCaps="true"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -476,7 +476,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
-                android:background="#000000"
+                android:background="@drawable/black_buttonshape"
                 android:onClick="showFirstResults"
                 android:text="@string/create_circus"
                 android:textColor="#FFFFFF" />
@@ -605,7 +605,7 @@
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="16dp"
                         android:layout_weight="1"
-                        android:background="#C90032"
+                        android:background="@drawable/red_buttonshape"
                         android:onClick="startOver"
                         android:text="@string/start_over"
                         android:textColor="#FFFFFF" />
@@ -617,7 +617,7 @@
                         android:layout_marginRight="24dp"
                         android:layout_marginTop="16dp"
                         android:layout_weight="1"
-                        android:background="#05A783"
+                        android:background="@drawable/green_buttonshape"
                         android:onClick="proceed"
                         android:text="@string/proceed"
                         android:textColor="#FFFFFF" />
@@ -645,7 +645,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/points_left"
+                    android:text="@string/total_points_left"
                     android:textAllCaps="true"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -938,7 +938,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:background="#000000"
+                android:background="@drawable/black_buttonshape"
                 android:onClick="showLastResults"
                 android:text="@string/create_circus"
                 android:textColor="#FFFFFF" />
@@ -1060,6 +1060,7 @@
                 android:id="@+id/hat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:adjustViewBounds="true"
@@ -1070,7 +1071,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:background="#000000"
+                android:background="@drawable/last_buttonshape"
                 android:onClick="startOver"
                 android:text="@string/rebirth"
                 android:textColor="#FFFFFF" />
