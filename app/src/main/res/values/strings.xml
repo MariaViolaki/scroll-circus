@@ -49,5 +49,11 @@
     <string name="epilogue_bad">Overall, it is broadly agreed there is still room for improvement for the new circus.</string>
     <string name="introduction_good">There were some key-elements which contributed to the audience\'s positive experience.</string>
     <string name="introduction_bad">Nevertheless, without any doubt, the circus is still behind its competitors.</string>
+    <string name="step_three">You haven\'t succeeded yet! Start over or make improvements using your earnings!</string>
+    <string name="start_over">Start Over</string>
+    <string name="proceed">Proceed</string>
+    <string name="congratulations">Congratulations! Let your clowns crown you with the Jester Hat!</string>
+    <string name="game_over">Game Over! Be reborn again to change your circus fate!</string>
+    <string name="rebirth">Rebirth</string>
 
 </resources>
