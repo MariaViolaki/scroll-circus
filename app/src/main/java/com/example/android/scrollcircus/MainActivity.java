@@ -463,6 +463,28 @@ public class MainActivity extends AppCompatActivity {
         // Display the article body
         TextView firstArticle = findViewById(R.id.first_article);
         firstArticle.setText(composeArticle());
+
+        Switch budget = findViewById(R.id.budget);
+        Switch knowledge = findViewById(R.id.knowledge);
+        Switch entertainment = findViewById(R.id.entertainment);
+        Switch caution = findViewById(R.id.caution);
+        Switch strength = findViewById(R.id.strength);
+        Switch flexibility = findViewById(R.id.flexibility);
+        Switch snacks = findViewById(R.id.snacks);
+        Switch merchandising = findViewById(R.id.merchandising);
+        Switch animals = findViewById(R.id.animals);
+        Switch freaks = findViewById(R.id.freaks);
+
+        budget.setClickable(false);
+        knowledge.setClickable(false);
+        entertainment.setClickable(false);
+        caution.setClickable(false);
+        strength.setClickable(false);
+        flexibility.setClickable(false);
+        snacks.setClickable(false);
+        merchandising.setClickable(false);
+        animals.setClickable(false);
+        freaks.setClickable(false);
     }
 
     public void startOver(View view) {
