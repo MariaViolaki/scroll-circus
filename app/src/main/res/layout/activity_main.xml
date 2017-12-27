@@ -11,8 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="@dimen/medium"
+        android:layout_marginStart="@dimen/medium"
         android:background="#D9FFFFFF"
         android:orientation="vertical">
 
@@ -20,9 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:padding="16dp"
+            android:padding="@dimen/medium"
             android:text="@string/welcome"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold|italic" />
 
         <RelativeLayout
@@ -38,9 +38,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/medium"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="@dimen/small">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -63,13 +63,13 @@
                         <android.support.v7.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="@dimen/small"
+                            android:layout_marginTop="@dimen/small"
                             android:layout_weight="6"
                             android:background="#B71C1C"
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
-                            android:padding="8dp"
+                            android:padding="@dimen/small"
                             android:text="@string/step_one"
                             android:textColor="#FFFFFF"
                             app:autoSizeMaxTextSize="56sp"
@@ -94,9 +94,9 @@
             android:id="@+id/life_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginStart="24dp"
+            android:layout_marginBottom="@dimen/huge"
+            android:layout_marginEnd="@dimen/large"
+            android:layout_marginStart="@dimen/large"
             android:background="@drawable/black_buttonshape"
             android:onClick="randomizePoints"
             android:text="@string/life_button"
@@ -115,9 +115,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/medium"
                 android:orientation="horizontal"
-                android:padding="8dp">
+                android:padding="@dimen/small">
 
                 <ImageView
                     android:layout_width="0dp"
@@ -140,13 +140,13 @@
                         <android.support.v7.widget.AppCompatTextView
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="@dimen/small"
+                            android:layout_marginTop="@dimen/small"
                             android:layout_weight="6"
                             android:background="#B71C1C"
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
-                            android:padding="8dp"
+                            android:padding="@dimen/small"
                             android:text="@string/step_two"
                             android:textColor="#FFFFFF"
                             app:autoSizeMaxTextSize="56sp"
@@ -171,14 +171,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingBottom="16dp">
+            android:paddingBottom="@dimen/medium">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -204,9 +204,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp"
+                android:layout_marginBottom="@dimen/small"
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium"
                 android:text="@string/foundation"
                 android:textStyle="bold" />
 
@@ -214,8 +214,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/budget"
@@ -223,13 +223,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addBudget"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/budget" />
 
             </LinearLayout>
@@ -238,8 +238,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/knowledge"
@@ -247,13 +247,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addKnowledge"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/knowledge" />
 
             </LinearLayout>
@@ -261,10 +261,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginTop="@dimen/medium"
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium"
                 android:text="@string/employees"
                 android:textStyle="bold" />
 
@@ -272,8 +272,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/entertainment"
@@ -281,13 +281,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addEntertainment"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/entertainment" />
 
             </LinearLayout>
@@ -296,8 +296,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/caution"
@@ -305,13 +305,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addCaution"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/caution" />
 
             </LinearLayout>
@@ -320,8 +320,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/strength"
@@ -329,13 +329,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addStrength"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/strength" />
 
             </LinearLayout>
@@ -344,8 +344,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/flexibility"
@@ -353,13 +353,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addFlexibility"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/flexibility" />
 
             </LinearLayout>
@@ -367,10 +367,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginTop="@dimen/medium"
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium"
                 android:text="@string/extras"
                 android:textStyle="bold" />
 
@@ -378,8 +378,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/snacks"
@@ -387,13 +387,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addSnacks"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/snacks" />
 
             </LinearLayout>
@@ -402,8 +402,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/merchandising"
@@ -411,13 +411,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addMerchandising"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/merchandising" />
 
             </LinearLayout>
@@ -426,8 +426,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/animals"
@@ -435,13 +435,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addAnimals"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/animals" />
 
             </LinearLayout>
@@ -450,8 +450,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingEnd="16dp"
-                android:paddingStart="16dp">
+                android:paddingEnd="@dimen/medium"
+                android:paddingStart="@dimen/medium">
 
                 <Switch
                     android:id="@+id/freaks"
@@ -459,13 +459,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addFreaks"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/freaks" />
 
             </LinearLayout>
@@ -473,9 +473,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginBottom="@dimen/medium"
+                android:layout_marginEnd="@dimen/large"
+                android:layout_marginStart="@dimen/large"
+                android:layout_marginTop="@dimen/large"
                 android:background="@drawable/black_buttonshape"
                 android:onClick="showFirstResults"
                 android:text="@string/create_circus"
@@ -491,7 +492,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
+                    android:layout_margin="@dimen/medium"
                     android:orientation="vertical">
 
                     <ImageView
@@ -506,7 +507,7 @@
                         android:background="#F6F6F4"
                         android:fontFamily="@font/antic_didone_regular"
                         android:includeFontPadding="false"
-                        android:padding="16dp"
+                        android:padding="@dimen/medium"
                         android:text="@string/article_title"
                         android:textAllCaps="false"
                         android:textSize="18sp"
@@ -519,9 +520,9 @@
                         android:background="#F6F6F4"
                         android:fontFamily="@font/antic_didone_regular"
                         android:includeFontPadding="false"
-                        android:paddingBottom="16dp"
-                        android:paddingEnd="16dp"
-                        android:paddingStart="16dp"
+                        android:paddingBottom="@dimen/medium"
+                        android:paddingEnd="@dimen/medium"
+                        android:paddingStart="@dimen/medium"
                         android:text=""
                         android:textSize="15sp" />
 
@@ -541,9 +542,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
+                        android:layout_marginBottom="@dimen/medium"
                         android:orientation="horizontal"
-                        android:padding="8dp">
+                        android:padding="@dimen/small">
 
                         <ImageView
                             android:layout_width="0dp"
@@ -566,13 +567,13 @@
                                 <android.support.v7.widget.AppCompatTextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_marginLeft="8dp"
-                                    android:layout_marginTop="8dp"
+                                    android:layout_marginLeft="@dimen/small"
+                                    android:layout_marginTop="@dimen/small"
                                     android:layout_weight="6"
                                     android:background="#B71C1C"
                                     android:gravity="center_vertical|center_horizontal"
                                     android:includeFontPadding="false"
-                                    android:padding="8dp"
+                                    android:padding="@dimen/small"
                                     android:text="@string/step_three"
                                     android:textColor="#FFFFFF"
                                     app:autoSizeMaxTextSize="56sp"
@@ -596,14 +597,15 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium"
                     android:orientation="horizontal">
 
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="@dimen/large"
+                        android:layout_marginRight="@dimen/small"
+                        android:layout_marginTop="@dimen/medium"
                         android:layout_weight="1"
                         android:background="@drawable/red_buttonshape"
                         android:onClick="startOver"
@@ -613,9 +615,9 @@
                     <Button
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="24dp"
-                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="@dimen/small"
+                        android:layout_marginRight="@dimen/large"
+                        android:layout_marginTop="@dimen/medium"
                         android:layout_weight="1"
                         android:background="@drawable/green_buttonshape"
                         android:onClick="proceed"
@@ -637,8 +639,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <TextView
@@ -665,17 +667,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:text="@string/foundation"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -684,13 +686,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addBudget2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/budget" />
 
             </LinearLayout>
@@ -698,8 +700,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -708,13 +710,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addKnowledge2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/knowledge" />
 
             </LinearLayout>
@@ -722,18 +724,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
+                android:layout_marginTop="@dimen/medium"
                 android:text="@string/employees"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -742,13 +744,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addEntertainment2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/entertainment" />
 
             </LinearLayout>
@@ -756,8 +758,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -766,13 +768,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addCaution2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/caution" />
 
             </LinearLayout>
@@ -780,8 +782,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -790,13 +792,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addStrength2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/strength" />
 
             </LinearLayout>
@@ -804,8 +806,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -814,13 +816,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addFlexibility2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/flexibility" />
 
             </LinearLayout>
@@ -828,18 +830,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginBottom="@dimen/small"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
+                android:layout_marginTop="@dimen/medium"
                 android:text="@string/extras"
                 android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -848,13 +850,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addSnacks2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/snacks" />
 
             </LinearLayout>
@@ -862,8 +864,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -872,13 +874,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addMerchandising2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/merchandising" />
 
             </LinearLayout>
@@ -886,8 +888,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -896,13 +898,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addAnimals2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/animals" />
 
             </LinearLayout>
@@ -910,8 +912,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:orientation="horizontal">
 
                 <Switch
@@ -920,13 +922,13 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:onClick="addFreaks2"
-                    android:paddingLeft="4dp" />
+                    android:paddingLeft="@dimen/tiny" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="@dimen/small"
                     android:text="@string/freaks" />
 
             </LinearLayout>
@@ -934,10 +936,10 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginBottom="@dimen/huge"
+                android:layout_marginEnd="@dimen/large"
+                android:layout_marginStart="@dimen/large"
+                android:layout_marginTop="@dimen/large"
                 android:background="@drawable/black_buttonshape"
                 android:onClick="showLastResults"
                 android:text="@string/create_circus"
@@ -954,7 +956,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/medium"
                 android:orientation="vertical">
 
                 <ImageView
@@ -969,7 +971,7 @@
                     android:background="#F6F6F4"
                     android:fontFamily="@font/antic_didone_regular"
                     android:includeFontPadding="false"
-                    android:padding="16dp"
+                    android:padding="@dimen/medium"
                     android:text="@string/article_title"
                     android:textAllCaps="false"
                     android:textSize="18sp"
@@ -982,9 +984,9 @@
                     android:background="#F6F6F4"
                     android:fontFamily="@font/antic_didone_regular"
                     android:includeFontPadding="false"
-                    android:paddingBottom="16dp"
-                    android:paddingEnd="16dp"
-                    android:paddingStart="16dp"
+                    android:paddingBottom="@dimen/medium"
+                    android:paddingEnd="@dimen/medium"
+                    android:paddingStart="@dimen/medium"
                     android:text=""
                     android:textSize="15sp" />
 
@@ -1003,9 +1005,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="@dimen/medium"
                     android:orientation="horizontal"
-                    android:padding="8dp">
+                    android:padding="@dimen/small">
 
                     <ImageView
                         android:layout_width="0dp"
@@ -1029,13 +1031,13 @@
                                 android:id="@+id/last_step"
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginTop="@dimen/small"
                                 android:layout_weight="6"
                                 android:background="#B71C1C"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:includeFontPadding="false"
-                                android:padding="8dp"
+                                android:padding="@dimen/small"
                                 android:text=""
                                 android:textColor="#FFFFFF"
                                 app:autoSizeMaxTextSize="56sp"
@@ -1060,9 +1062,8 @@
                 android:id="@+id/hat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="@dimen/medium"
+                android:layout_marginStart="@dimen/medium"
                 android:adjustViewBounds="true"
                 android:src="@drawable/hat" />
 
@@ -1070,7 +1071,7 @@
                 android:id="@+id/last_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="@dimen/huge"
                 android:background="@drawable/last_buttonshape"
                 android:onClick="startOver"
                 android:text="@string/rebirth"

@@ -17,8 +17,6 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean firstTry = true;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         if (buttonClicked == 0) {
             buttonClicked++;
             // Generate random number using multiples of 5
-            points = ((int) (Math.random() * 15 + 10) * 5);
+            points = ((int) (Math.random() * 15 + 8) * 5);
             // Show the number on the screen
             TextView numberOfPoints = findViewById(R.id.number_of_points);
             numberOfPoints.setText("" + points);
@@ -464,6 +462,7 @@ public class MainActivity extends AppCompatActivity {
         TextView firstArticle = findViewById(R.id.first_article);
         firstArticle.setText(composeArticle());
 
+        // Make first switches unclickable
         Switch budget = findViewById(R.id.budget);
         Switch knowledge = findViewById(R.id.knowledge);
         Switch entertainment = findViewById(R.id.entertainment);
@@ -485,6 +484,8 @@ public class MainActivity extends AppCompatActivity {
         merchandising.setClickable(false);
         animals.setClickable(false);
         freaks.setClickable(false);
+
+        Toast.makeText(this, "Scroll down to continue.", Toast.LENGTH_SHORT).show();
     }
 
     public void startOver(View view) {
@@ -534,7 +535,7 @@ public class MainActivity extends AppCompatActivity {
         freaks2.setChecked(false);
     }
 
-    private int calculateIncome() {
+    private int calculateEarnings() {
 
         // Determine success depending on resources availability
         if (hasBudget && hasKnowledge && hasEntertainment && hasCaution && hasStrength && hasFlexibility && hasSnacks && hasMerchandising) {
@@ -570,26 +571,24 @@ public class MainActivity extends AppCompatActivity {
         if (hasMerchandising) {
             newPoints += 5;
         }
-        if (isSuccessful && hasAnimals) {
-            newPoints += 0;
-        } else if (hasAnimals) {
-            newPoints -= 5;
+        if (hasAnimals) {
+            newPoints -= 10;
         }
-        if (isSuccessful && hasFreaks) {
-            newPoints += 0;
-        } else if (hasFreaks) {
-            newPoints -= 5;
+        if (hasFreaks) {
+            newPoints -= 10;
         }
 
         return newPoints;
     }
 
     public void proceed(View view) {
-        totalPoints = points + calculateIncome();
+        totalPoints = points + calculateEarnings();
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
         LinearLayout lastTry = findViewById(R.id.last_try);
         lastTry.setVisibility(View.VISIBLE);
+
+        Toast.makeText(this, "Scroll down to continue.", Toast.LENGTH_SHORT).show();
     }
 
     public void addBudget2(View view) {
@@ -600,6 +599,7 @@ public class MainActivity extends AppCompatActivity {
                 budget.setChecked(true);
                 budget2.setChecked(true);
                 totalPoints = totalPoints - 25;
+                points = points - 25;
                 hasBudget = true;
             } else {
                 budget.setChecked(false);
@@ -610,10 +610,18 @@ public class MainActivity extends AppCompatActivity {
             budget.setChecked(false);
             budget2.setChecked(false);
             totalPoints = totalPoints + 25;
+            points = points + 25;
             hasBudget = false;
         }
+
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addKnowledge2(View view) {
@@ -624,6 +632,7 @@ public class MainActivity extends AppCompatActivity {
                 knowledge.setChecked(true);
                 knowledge2.setChecked(true);
                 totalPoints = totalPoints - 20;
+                points = points - 20;
                 hasKnowledge = true;
             } else {
                 knowledge.setChecked(false);
@@ -634,10 +643,17 @@ public class MainActivity extends AppCompatActivity {
             knowledge.setChecked(false);
             knowledge2.setChecked(false);
             totalPoints = totalPoints + 20;
+            points = points + 20;
             hasKnowledge = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addEntertainment2(View view) {
@@ -648,6 +664,7 @@ public class MainActivity extends AppCompatActivity {
                 entertainment.setChecked(true);
                 entertainment2.setChecked(true);
                 totalPoints = totalPoints - 20;
+                points = points - 20;
                 hasEntertainment = true;
             } else {
                 entertainment.setChecked(false);
@@ -658,10 +675,17 @@ public class MainActivity extends AppCompatActivity {
             entertainment.setChecked(false);
             entertainment2.setChecked(false);
             totalPoints = totalPoints + 20;
+            points = points + 20;
             hasEntertainment = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addCaution2(View view) {
@@ -672,6 +696,7 @@ public class MainActivity extends AppCompatActivity {
                 caution.setChecked(true);
                 caution2.setChecked(true);
                 totalPoints = totalPoints - 15;
+                points = points - 15;
                 hasCaution = true;
             } else {
                 caution.setChecked(false);
@@ -682,10 +707,17 @@ public class MainActivity extends AppCompatActivity {
             caution.setChecked(false);
             caution2.setChecked(false);
             totalPoints = totalPoints + 15;
+            points = points + 15;
             hasCaution = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addStrength2(View view) {
@@ -696,6 +728,7 @@ public class MainActivity extends AppCompatActivity {
                 strength.setChecked(true);
                 strength2.setChecked(true);
                 totalPoints = totalPoints - 15;
+                points = points - 15;
                 hasStrength = true;
             } else {
                 strength.setChecked(false);
@@ -706,10 +739,17 @@ public class MainActivity extends AppCompatActivity {
             strength.setChecked(false);
             strength2.setChecked(false);
             totalPoints = totalPoints + 15;
+            points = points + 15;
             hasStrength = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addFlexibility2(View view) {
@@ -720,6 +760,7 @@ public class MainActivity extends AppCompatActivity {
                 flexibility.setChecked(true);
                 flexibility2.setChecked(true);
                 totalPoints = totalPoints - 10;
+                points = points - 10;
                 hasFlexibility = true;
             } else {
                 flexibility.setChecked(false);
@@ -730,10 +771,17 @@ public class MainActivity extends AppCompatActivity {
             flexibility.setChecked(false);
             flexibility2.setChecked(false);
             totalPoints = totalPoints + 10;
+            points = points + 10;
             hasFlexibility = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addSnacks2(View view) {
@@ -744,6 +792,7 @@ public class MainActivity extends AppCompatActivity {
                 snacks.setChecked(true);
                 snacks2.setChecked(true);
                 totalPoints = totalPoints - 10;
+                points = points - 10;
                 hasSnacks = true;
             } else {
                 snacks.setChecked(false);
@@ -754,10 +803,17 @@ public class MainActivity extends AppCompatActivity {
             snacks.setChecked(false);
             snacks2.setChecked(false);
             totalPoints = totalPoints + 10;
+            points = points + 10;
             hasSnacks = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addMerchandising2(View view) {
@@ -768,6 +824,7 @@ public class MainActivity extends AppCompatActivity {
                 merchandising.setChecked(true);
                 merchandising2.setChecked(true);
                 totalPoints = totalPoints - 10;
+                points = points - 10;
                 hasMerchandising = true;
             } else {
                 merchandising.setChecked(false);
@@ -778,10 +835,17 @@ public class MainActivity extends AppCompatActivity {
             merchandising.setChecked(false);
             merchandising2.setChecked(false);
             totalPoints = totalPoints + 10;
+            points = points + 10;
             hasMerchandising = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addAnimals2(View view) {
@@ -792,6 +856,7 @@ public class MainActivity extends AppCompatActivity {
                 animals.setChecked(true);
                 animals2.setChecked(true);
                 totalPoints = totalPoints - 5;
+                points = points - 5;
                 hasAnimals = true;
             } else {
                 animals.setChecked(false);
@@ -802,10 +867,17 @@ public class MainActivity extends AppCompatActivity {
             animals.setChecked(false);
             animals2.setChecked(false);
             totalPoints = totalPoints + 5;
+            points = points + 5;
             hasAnimals = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void addFreaks2(View view) {
@@ -816,6 +888,7 @@ public class MainActivity extends AppCompatActivity {
                 freaks.setChecked(true);
                 freaks2.setChecked(true);
                 totalPoints = totalPoints - 5;
+                points = points - 5;
                 hasFreaks = true;
             } else {
                 freaks.setChecked(false);
@@ -826,10 +899,17 @@ public class MainActivity extends AppCompatActivity {
             freaks.setChecked(false);
             freaks2.setChecked(false);
             totalPoints = totalPoints + 5;
+            points = points + 5;
             hasFreaks = false;
         }
         TextView numberOfTotalPoints = findViewById(R.id.number_of_total_points);
         numberOfTotalPoints.setText("" + totalPoints);
+        TextView numberOfPoints = findViewById(R.id.number_of_points);
+        if (points < 0) {
+            numberOfPoints.setText("0");
+        } else {
+            numberOfPoints.setText("" + points);
+        }
     }
 
     public void showLastResults(View view) {
@@ -859,5 +939,7 @@ public class MainActivity extends AppCompatActivity {
             lastStep.setText(getText(R.string.game_over));
             hat.setVisibility(View.GONE);
         }
+
+        Toast.makeText(this, "Scroll down to continue.", Toast.LENGTH_SHORT).show();
     }
 }
