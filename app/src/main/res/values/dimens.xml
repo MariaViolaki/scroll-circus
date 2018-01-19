@@ -5,4 +5,11 @@
     <dimen name="medium">16dp</dimen>
     <dimen name="large">24dp</dimen>
     <dimen name="huge">32dp</dimen>
+    <dimen name="size1">1sp</dimen>
+    <dimen name="size2">5sp</dimen>
+    <dimen name="size3">15sp</dimen>
+    <dimen name="size4">16sp</dimen>
+    <dimen name="size5">18sp</dimen>
+    <dimen name="size6">40sp</dimen>
+    <dimen name="size7">56sp</dimen>
 </resources>

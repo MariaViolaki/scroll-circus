@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_marginEnd="@dimen/medium"
         android:layout_marginStart="@dimen/medium"
-        android:background="#D9FFFFFF"
+        android:background="@color/transparent"
         android:orientation="vertical">
 
         <TextView
@@ -22,7 +22,7 @@
             android:gravity="center_horizontal"
             android:padding="@dimen/medium"
             android:text="@string/welcome"
-            android:textSize="18sp"
+            android:textSize="@dimen/size5"
             android:textStyle="bold|italic" />
 
         <RelativeLayout
@@ -30,10 +30,11 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/stripes1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/stripes" />
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,11 +44,12 @@
                 android:padding="@dimen/small">
 
                 <ImageView
+                    android:id="@+id/ringmaster1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/ringmaster" />
+                   />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -66,15 +68,15 @@
                             android:layout_marginLeft="@dimen/small"
                             android:layout_marginTop="@dimen/small"
                             android:layout_weight="6"
-                            android:background="#B71C1C"
+                            android:background="@color/red"
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
                             android:padding="@dimen/small"
                             android:text="@string/step_one"
-                            android:textColor="#FFFFFF"
-                            app:autoSizeMaxTextSize="56sp"
-                            app:autoSizeMinTextSize="5sp"
-                            app:autoSizeStepGranularity="1sp"
+                            android:textColor="@color/white"
+                            app:autoSizeMaxTextSize="@dimen/size7"
+                            app:autoSizeMinTextSize="@dimen/size2"
+                            app:autoSizeStepGranularity="@dimen/size1"
                             app:autoSizeTextType="uniform" />
 
                         <TextView
@@ -100,17 +102,18 @@
             android:background="@drawable/black_buttonshape"
             android:onClick="randomizePoints"
             android:text="@string/life_button"
-            android:textColor="#FFFFFF" />
+            android:textColor="@color/white" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/stripes2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:src="@drawable/stripes" />
+                />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -120,11 +123,12 @@
                 android:padding="@dimen/small">
 
                 <ImageView
+                    android:id="@+id/ringmaster2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/ringmaster" />
+                   />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -143,15 +147,15 @@
                             android:layout_marginLeft="@dimen/small"
                             android:layout_marginTop="@dimen/small"
                             android:layout_weight="6"
-                            android:background="#B71C1C"
+                            android:background="@color/red"
                             android:gravity="center_vertical|center_horizontal"
                             android:includeFontPadding="false"
                             android:padding="@dimen/small"
                             android:text="@string/step_two"
-                            android:textColor="#FFFFFF"
-                            app:autoSizeMaxTextSize="56sp"
-                            app:autoSizeMinTextSize="5sp"
-                            app:autoSizeStepGranularity="1sp"
+                            android:textColor="@color/white"
+                            app:autoSizeMaxTextSize="@dimen/size7"
+                            app:autoSizeMinTextSize="@dimen/size2"
+                            app:autoSizeStepGranularity="@dimen/size1"
                             app:autoSizeTextType="uniform" />
 
                         <TextView
@@ -186,7 +190,7 @@
                     android:layout_gravity="center_vertical"
                     android:text="@string/life_points_left"
                     android:textAllCaps="true"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size4"
                     android:textStyle="bold" />
 
                 <TextView
@@ -195,8 +199,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="0"
-                    android:textColor="#B71C1C"
-                    android:textSize="40sp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size6"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -480,7 +484,7 @@
                 android:background="@drawable/black_buttonshape"
                 android:onClick="showFirstResults"
                 android:text="@string/create_circus"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
 
             <LinearLayout
@@ -496,35 +500,36 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/newspaper1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/newspaper" />
+                    />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#F6F6F4"
+                        android:background="@color/newspaper"
                         android:fontFamily="@font/antic_didone_regular"
                         android:includeFontPadding="false"
                         android:padding="@dimen/medium"
                         android:text="@string/article_title"
                         android:textAllCaps="false"
-                        android:textSize="18sp"
+                        android:textSize="@dimen/size5"
                         android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/first_article"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#F6F6F4"
+                        android:background="@color/newspaper"
                         android:fontFamily="@font/antic_didone_regular"
                         android:includeFontPadding="false"
                         android:paddingBottom="@dimen/medium"
                         android:paddingEnd="@dimen/medium"
                         android:paddingStart="@dimen/medium"
                         android:text=""
-                        android:textSize="15sp" />
+                        android:textSize="@dimen/size3" />
 
                 </LinearLayout>
 
@@ -534,10 +539,11 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
+                        android:id="@+id/stripes3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/stripes" />
+                      />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -547,11 +553,12 @@
                         android:padding="@dimen/small">
 
                         <ImageView
+                            android:id="@+id/ringmaster3"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="3"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/ringmaster" />
+                          />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -570,15 +577,15 @@
                                     android:layout_marginLeft="@dimen/small"
                                     android:layout_marginTop="@dimen/small"
                                     android:layout_weight="6"
-                                    android:background="#B71C1C"
+                                    android:background="@color/red"
                                     android:gravity="center_vertical|center_horizontal"
                                     android:includeFontPadding="false"
                                     android:padding="@dimen/small"
                                     android:text="@string/step_three"
-                                    android:textColor="#FFFFFF"
-                                    app:autoSizeMaxTextSize="56sp"
-                                    app:autoSizeMinTextSize="5sp"
-                                    app:autoSizeStepGranularity="1sp"
+                                    android:textColor="@color/white"
+                                    app:autoSizeMaxTextSize="@dimen/size7"
+                                    app:autoSizeMinTextSize="@dimen/size2"
+                                    app:autoSizeStepGranularity="@dimen/size1"
                                     app:autoSizeTextType="uniform" />
 
                                 <TextView
@@ -610,7 +617,7 @@
                         android:background="@drawable/red_buttonshape"
                         android:onClick="startOver"
                         android:text="@string/start_over"
-                        android:textColor="#FFFFFF" />
+                        android:textColor="@color/white" />
 
                     <Button
                         android:layout_width="0dp"
@@ -622,7 +629,7 @@
                         android:background="@drawable/green_buttonshape"
                         android:onClick="proceed"
                         android:text="@string/proceed"
-                        android:textColor="#FFFFFF" />
+                        android:textColor="@color/white" />
 
                 </LinearLayout>
 
@@ -649,7 +656,7 @@
                     android:layout_gravity="center_vertical"
                     android:text="@string/total_points_left"
                     android:textAllCaps="true"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/size4"
                     android:textStyle="bold" />
 
                 <TextView
@@ -658,8 +665,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="0"
-                    android:textColor="#B71C1C"
-                    android:textSize="40sp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size6"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -943,7 +950,7 @@
                 android:background="@drawable/black_buttonshape"
                 android:onClick="showLastResults"
                 android:text="@string/create_circus"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
@@ -960,35 +967,36 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/newspaper2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/newspaper" />
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#F6F6F4"
+                    android:background="@color/newspaper"
                     android:fontFamily="@font/antic_didone_regular"
                     android:includeFontPadding="false"
                     android:padding="@dimen/medium"
                     android:text="@string/article_title"
                     android:textAllCaps="false"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/size5"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/last_article"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#F6F6F4"
+                    android:background="@color/newspaper"
                     android:fontFamily="@font/antic_didone_regular"
                     android:includeFontPadding="false"
                     android:paddingBottom="@dimen/medium"
                     android:paddingEnd="@dimen/medium"
                     android:paddingStart="@dimen/medium"
                     android:text=""
-                    android:textSize="15sp" />
+                    android:textSize="@dimen/size3" />
 
             </LinearLayout>
 
@@ -997,10 +1005,11 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
+                    android:id="@+id/stripes4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/stripes" />
+                   />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -1010,11 +1019,12 @@
                     android:padding="@dimen/small">
 
                     <ImageView
+                        android:id="@+id/ringmaster4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:adjustViewBounds="true"
-                        android:src="@drawable/ringmaster" />
+                        />
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -1034,15 +1044,15 @@
                                 android:layout_marginLeft="@dimen/small"
                                 android:layout_marginTop="@dimen/small"
                                 android:layout_weight="6"
-                                android:background="#B71C1C"
+                                android:background="@color/red"
                                 android:gravity="center_vertical|center_horizontal"
                                 android:includeFontPadding="false"
                                 android:padding="@dimen/small"
                                 android:text=""
-                                android:textColor="#FFFFFF"
-                                app:autoSizeMaxTextSize="56sp"
-                                app:autoSizeMinTextSize="5sp"
-                                app:autoSizeStepGranularity="1sp"
+                                android:textColor="@color/white"
+                                app:autoSizeMaxTextSize="@dimen/size7"
+                                app:autoSizeMinTextSize="@dimen/size2"
+                                app:autoSizeStepGranularity="@dimen/size1"
                                 app:autoSizeTextType="uniform" />
 
                             <TextView
@@ -1065,7 +1075,7 @@
                 android:layout_marginEnd="@dimen/medium"
                 android:layout_marginStart="@dimen/medium"
                 android:adjustViewBounds="true"
-                android:src="@drawable/hat" />
+                />
 
             <Button
                 android:id="@+id/last_button"
@@ -1075,7 +1085,7 @@
                 android:background="@drawable/last_buttonshape"
                 android:onClick="startOver"
                 android:text="@string/rebirth"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 

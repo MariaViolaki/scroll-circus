@@ -11,6 +11,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 import org.w3c.dom.Text;
 
 import java.util.Random;
@@ -21,6 +23,78 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Find all images on xml
+        ImageView stripes1 = findViewById(R.id.stripes1);
+        ImageView stripes2 = findViewById(R.id.stripes2);
+        ImageView stripes3 = findViewById(R.id.stripes3);
+        ImageView stripes4 = findViewById(R.id.stripes4);
+        ImageView ringmaster1 = findViewById(R.id.ringmaster1);
+        ImageView ringmaster2 = findViewById(R.id.ringmaster2);
+        ImageView ringmaster3 = findViewById(R.id.ringmaster3);
+        ImageView ringmaster4 = findViewById(R.id.ringmaster4);
+        ImageView newspaper1 = findViewById(R.id.newspaper1);
+        ImageView newspaper2 = findViewById(R.id.newspaper2);
+        ImageView hat = findViewById(R.id.hat);
+
+        // Load images using Glide
+        try {
+            Glide.with(this).load(R.drawable.stripes).into(stripes1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.stripes).into(stripes2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.stripes).into(stripes3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.stripes).into(stripes4);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.ringmaster).into(ringmaster1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.ringmaster).into(ringmaster2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.ringmaster).into(ringmaster3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.ringmaster).into(ringmaster4);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.newspaper).into(newspaper1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.newspaper).into(newspaper2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Glide.with(this).load(R.drawable.hat).into(hat);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Hide results so that they only appear in the end
         LinearLayout firstResults = findViewById(R.id.first_results);
         firstResults.setVisibility(View.GONE);
         LinearLayout lastTry = findViewById(R.id.last_try);
